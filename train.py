@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from keras.utils import np_utils
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten
+from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Convolution2D, MaxPooling2D
 from sklearn.model_selection import train_test_split
 
@@ -107,5 +107,6 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 model.fit(x_train, y_train,
-          batch_size=32, epochs=10, verbose=1)
-score = model.evaluate(x_test, y_test, verbose=0)
+          batch_size=32, epochs=100, verbose=1)
+
+model.save('asl.h5')
