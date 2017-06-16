@@ -1,12 +1,13 @@
 import os
-import cv2
 import numpy as np
 from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Convolution2D, MaxPooling2D
 from sklearn.model_selection import train_test_split
-
+from skimage.transform import resize
+from skimage.io import imread
+from skimage.color import rgb2gray
 
 letter_map = {
     'a': 0,
@@ -72,8 +73,8 @@ files, y = build_dataset('dataset')
 x = []
 for i, file in enumerate(files):
     print(i, 'out of', len(files))
-    image = cv2.imread(file)
-    image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    image = imread(file)
+    image = rgb2gray(image)
     x.append(image)
 
 x = np.array(x)
