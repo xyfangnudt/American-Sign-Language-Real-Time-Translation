@@ -7,6 +7,7 @@ Table of contents
 - [Introduction](#introduction)
 - [Requirements](#requirements) 
 - [Installation](#installation)
+- [Running](#running)
 - [Feature Extraction](#feature-extraction)
 - [Results](#results)
 - [Conclusion](#conclusion)
@@ -28,7 +29,10 @@ Installation
 -------------
 * `git clone https://github.com/GarrettBeatty/American-Sign-Language-Real-Time-Translation.git`
 * `pip3 install -r requirements.txt` 
-* To run: `python3 webcam.py`
+
+Running
+-------
+` python3 webcam.py`
 
 Feature Extraction                                            
 -------------------
