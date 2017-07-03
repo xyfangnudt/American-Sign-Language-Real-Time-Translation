@@ -7,7 +7,7 @@ American Sign Language (ASL) is the predominant sign language for the Deaf commu
 in the United States. Because most signs involve movement and facial expressions, 
 this project aims to only recognize ASL fingerspelling.
 
-Below is an image of signs that this program will recognize.
+Below are signs that this program will recognize.
 
 ![ASL Signs](signs.png)
 
