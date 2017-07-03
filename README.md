@@ -46,7 +46,7 @@ Author
 
 License
 -------------
-See [License](#LICENSE.md)
+See [License](https://github.com/GarrettBeatty/American-Sign-Language-Real-Time-Translation/blob/master/LICENSE.md)
 
 More Info
 ---------
