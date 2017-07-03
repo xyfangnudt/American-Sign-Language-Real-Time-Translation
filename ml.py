@@ -73,7 +73,7 @@ def main():
     labels = [os.path.basename(os.path.dirname(file)) for file in image_list]
     x_train, x_test, y_train, y_test = train_test_split(image_list, labels, train_size=.8)
 
-    dictionarySize = 200
+    dictionarySize = 500
     BOW = cv2.BOWKMeansTrainer(dictionarySize)
     sift = cv2.xfeatures2d.SIFT_create()
 
