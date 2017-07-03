@@ -28,15 +28,16 @@ def main():
 
         cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 255, 255))
         try:
-            if counter == 20:
+            if counter == 10:
                 kp, des = sift.detectAndCompute(roi_rec, None)
                 bow = ml.compute_bow(dictionary, [des])
                 print(model.predict(bow))
-                counter = 0
-        except:
-            pass
+        except Exception as e:
+            print(e)
 
         counter = counter + 1
+        if counter == 11:
+            counter = 0
         # cv2.imshow('skin', skin)
         cv2.imshow('frame', frame)
 
