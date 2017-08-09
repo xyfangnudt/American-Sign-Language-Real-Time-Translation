@@ -39,7 +39,9 @@ How it Works
     
 Results
 -------------
-This plan is still a work in progress. Future updates include potentially using a neural network to improve results.
+
+This program is still a work in progress. Future updates include potentially using a neural network to improve results.
+
 Author
 -------------
 * Garrett Beatty
